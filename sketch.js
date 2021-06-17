@@ -33,10 +33,7 @@ function preload(){
 
 function setup(){
   createCanvas(LARGEUR,HAUTEUR)
-  
-  nebula = createSprite(200,200,200,200);
-  nebula.addImage(nebulaImg);
-  nebula.scale = 1.1;
+
   
   vaisseau = createSprite(LARGEUR/2,HAUTEUR/2,20,20);
   vaisseau.addAnimation("spaceship",vaisseauImg);
@@ -54,6 +51,7 @@ function setup(){
 }
 
 function draw(){
+  background(nebulaImg);
   drawSprites();
     
   // START
